@@ -91,8 +91,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000000;
-  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .cover__title {
@@ -178,6 +178,7 @@
   margin-top: 176px;
   padding-left: 24px;
   padding-right: 24px;
+  margin-bottom: 177px;
 }
 
 .lots__heading {
@@ -194,11 +195,12 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 29px;
 }
 
 .lots__card-list-item {
   list-style: none;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .card-link {
@@ -215,7 +217,6 @@
   position: relative;
   min-height: 554px;
   width: 328px;
-  margin-right: 25px;
   justify-content: space-between;
 }
 
@@ -252,6 +253,7 @@
   padding-right: 35px;
   padding-top: 48px;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .card__text {
@@ -264,4 +266,85 @@
   padding-left: 40px;
   padding-right: 35px;
   padding-bottom: 46px;
+}
+
+.lots__look-more-link {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  text-align: left;
+  color: #000000;
+  padding-left: 39px;
+  text-decoration: underline;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 50%;
+  width: 237px;
+  height: 237px;
+  margin-left: 9px;
+}
+
+.about__logo-image {
+  height: 114px;
+  width: 148px;
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.about__column {
+  &:first-child {
+    flex: 0 0 352px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:last-child {
+    flex-grow: 1;
+    position: relative;
+  }
+}
+
+.about__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 25px;
+  margin-top: -135px;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  color: #000000;
+}
+
+.about__text {
+  padding-top: 244px;
+}
+
+.about__paragraph {
+  padding-right: 12px;
+  padding-left: 25px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
